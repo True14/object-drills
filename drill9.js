@@ -2,7 +2,7 @@ function makeToDos(owner, toDos) {
   return {
     owner,
     toDos,
-    generateHtml: function(){
+    generateHtml: () => {
       let myString = "<ul>"
       toDos.forEach(key => {
         myString += `<li>${key}</li>`;
